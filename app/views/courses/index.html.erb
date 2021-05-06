@@ -5,13 +5,14 @@
 </div>
 
 <div class="row">
+  <% Course.all.each do |course| %>
   <div class="col s6 m6">
     <div class="card blue-grey darken-1">
       <div class="card-content white-text">
-        <span class="card-title">Code: SS101</span>
+        <span class="card-title">Code: <%= course.short_name %></span>
         <ul>
-          <li>Name: Intro to the Super Sayian Transformation</li>
-          <li>Description: <em> A thorough intro to transforming into a Super Sayian</em></li>
+          <li>Name: <%= course.name %></li>
+          <li>Description: <em> <%= course.description %></em></li>
         </ul>
       </div>
       <div class="card-action">
@@ -20,20 +21,5 @@
       </div>
     </div>
   </div>
-  <div class="col s6 m6">
-    <div class="card blue-grey darken-1">
-      <div class="card-content white-text">
-        <span class="card-title">Code: QC101</span>
-        <ul>
-          <li>Name: Intro to Quirk Control</li>
-          <li>Description: <em> A thorough intro to understanding how/when to use your special abilities </em></li>
-        </ul>
-      </div>
-      <div class="card-action">
-        <a href="#">Enroll</a>
-        <a href="#">Info</a>
-      </div>
-    </div>
-  </div>
+  <% end %>
 </div>
-
