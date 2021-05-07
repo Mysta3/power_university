@@ -5,15 +5,14 @@
 </div>
 
 <div class="container">
-<ul class="collection">
-  <% @students.each do |student| %>
-  <li class="collection-item avatar">
-    <i class="material-icons circle">person_outline</i>
-    <span class="title"><strong>Name:</strong> <%= student.name %></span>
-    <p><strong>Email:</strong> <%= student.email %></p>
-    <a href="#!" class="secondary-content"><i class="medium material-icons">assessment</i></a>
-  </li>
-  <%end %>
-</ul>
+  <ul class="collection">
+    <% @students.each do |student| %>
+    <li class="collection-item avatar">
+      <i class="material-icons circle">person_outline</i>
+      <span class="title"><strong>Name:</strong> <%= student.name %></span>
+      <p><strong>Email:</strong> <%= student.email %></p>
+      <a href="#!" class="secondary-content"><i class="medium material-icons">assessment</i></a>
+    </li>
+    <%end %>
+  </ul>
 </div>
-
