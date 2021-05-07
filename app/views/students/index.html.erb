@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col s12 center-align">
-    <h3>Students List</h3>
+    <h3>Students Directory</h3>
   </div>
 </div>
 
@@ -9,7 +9,7 @@
     <% @students.each do |student| %>
     <li class="collection-item avatar">
       <i class="material-icons circle">person_outline</i>
-      <span class="title"><strong>Name:</strong> <%= student.name %></span>
+      <span class="title"><strong>Name:</strong> <%= student.name.capitalize %></span>
       <p><strong>Email:</strong> <%= student.email %></p>
       <a href="#!" class="secondary-content"><i class="medium material-icons">assessment</i></a>
     </li>

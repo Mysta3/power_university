@@ -22,6 +22,19 @@
         <%= f.email_field :email, placeholder: "Email" %>
       </div>
     </div>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">fingerprint</i>
+        <%= f.password_field :password, placeholder: "Choose a password?" %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">https</i>
+        <%= f.password_field :password_confirmation, placeholder: "Confirm your password" %>
+      </div>
+    </div>
     <%= button_tag( class:"btn waves-effect waves-light right") do %>
     <%= @student.new_record? ? "Sign Up" : "Update" %><i class="material-icons right">send</i>
     <% end %>
