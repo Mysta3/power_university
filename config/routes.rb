@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   get 'login', to: 'logins#new'
   post 'login', to: 'logins#create'
   get 'logout', to: 'logins#destroy'
-
+  get 'course_enroll', to: 'student_courses#create'
 end
