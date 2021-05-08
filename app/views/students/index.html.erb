@@ -12,6 +12,7 @@
       <span class="title"><strong>Name:</strong> <%= student.name.capitalize %></span>
       <p><strong>Email:</strong> <%= student.email %></p>
       <a href="#!" class="secondary-content"><i class="medium material-icons">assessment</i></a>
+      <small><%= link_to "View Profile", student_path(student) %></small>
     </li>
     <%end %>
   </ul>

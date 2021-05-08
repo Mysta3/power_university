@@ -1,4 +1,6 @@
 class LoginsController < ApplicationController
+  skip_before_action :require_user, only: [:new, :create]
+
   def new
 
   end
@@ -10,7 +12,7 @@ class LoginsController < ApplicationController
       flash[:notice] = "You have successfully logged in"
       redirect_to student
     else
-      flash[:notice] = "Something was wrong with your login informaiton "
+      flash.now[:notice] = "Something was wrong with your login informaiton "
       render 'new'
     end
   end
