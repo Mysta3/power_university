@@ -12,8 +12,9 @@
        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
        <ul id="nav-mobile" class="left hide-on-med-and-down">
-         <li><a href="#">Courses</a></li>
+         <li><%= link_to 'Courses', root_path %></li>
          <li><a href="#">Enrollment</a></li>
+         <li><%=link_to 'Login', login_path %><a href="#">Login</a></li>
          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Account<i class="material-icons right">arrow_drop_down</i></a></li>
 
        </ul>
